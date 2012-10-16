@@ -12,6 +12,8 @@
 
 int main(int argc, char *argv[])
 {
+    // force to use chinese
+    [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObject:@"zh"] forKey:@"AppleLanguages"];
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

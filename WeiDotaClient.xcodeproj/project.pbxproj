@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B356078162D095200880F9E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B35607A162D095200880F9E /* Localizable.strings */; };
+		9B356081162D33F700880F9E /* HttpCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B356080162D33F700880F9E /* HttpCom.m */; };
+		9B356084162D342100880F9E /* UIDevice-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B356083162D342100880F9E /* UIDevice-Extensions.m */; };
+		9B35608F162D397000880F9E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B35608D162D386000880F9E /* IOKit.framework */; };
 		9B9C1A8D16281E0F00A0A91C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C1A8C16281E0F00A0A91C /* UIKit.framework */; };
 		9B9C1A8F16281E1000A0A91C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C1A8E16281E0F00A0A91C /* Foundation.framework */; };
 		9B9C1A9116281E1000A0A91C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C1A9016281E1000A0A91C /* CoreGraphics.framework */; };
@@ -22,10 +26,18 @@
 		9B9C1ACA162BF83200A0A91C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C1AC2162BF83200A0A91C /* SBJsonBase.m */; };
 		9B9C1ACB162BF83200A0A91C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C1AC4162BF83200A0A91C /* SBJsonParser.m */; };
 		9B9C1ACC162BF83200A0A91C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C1AC6162BF83200A0A91C /* SBJsonWriter.m */; };
-		9B9C1AD0162BFEB300A0A91C /* HttpCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C1ACF162BFEB300A0A91C /* HttpCom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B35606B162D01E200880F9E /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9B35606C162D02DB00880F9E /* zh */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = zh; path = zh.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9B356079162D095200880F9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9B35607B162D096B00880F9E /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9B35607F162D33F700880F9E /* HttpCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpCom.h; sourceTree = "<group>"; };
+		9B356080162D33F700880F9E /* HttpCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpCom.m; sourceTree = "<group>"; };
+		9B356082162D342100880F9E /* UIDevice-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Extensions.h"; sourceTree = "<group>"; };
+		9B356083162D342100880F9E /* UIDevice-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Extensions.m"; sourceTree = "<group>"; };
+		9B35608D162D386000880F9E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		9B9C1A8816281E0F00A0A91C /* WeiDotaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiDotaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9C1A8C16281E0F00A0A91C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B9C1A8E16281E0F00A0A91C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,8 +66,6 @@
 		9B9C1AC4162BF83200A0A91C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		9B9C1AC5162BF83200A0A91C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		9B9C1AC6162BF83200A0A91C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		9B9C1ACE162BFEB300A0A91C /* HttpCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpCom.h; sourceTree = "<group>"; };
-		9B9C1ACF162BFEB300A0A91C /* HttpCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpCom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B35608F162D397000880F9E /* IOKit.framework in Frameworks */,
 				9B9C1A8D16281E0F00A0A91C /* UIKit.framework in Frameworks */,
 				9B9C1A8F16281E1000A0A91C /* Foundation.framework in Frameworks */,
 				9B9C1A9116281E1000A0A91C /* CoreGraphics.framework in Frameworks */,
@@ -72,10 +83,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B35607E162D33F700880F9E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9B35607F162D33F700880F9E /* HttpCom.h */,
+				9B356080162D33F700880F9E /* HttpCom.m */,
+				9B356082162D342100880F9E /* UIDevice-Extensions.h */,
+				9B356083162D342100880F9E /* UIDevice-Extensions.m */,
+			);
+			name = Utils;
+			path = WeiDotaClient/Utils;
+			sourceTree = "<group>";
+		};
 		9B9C1A7D16281E0F00A0A91C = {
 			isa = PBXGroup;
 			children = (
-				9B9C1ACD162BFE2B00A0A91C /* Http */,
+				9B35607E162D33F700880F9E /* Utils */,
 				9B9C1AB9162BF83200A0A91C /* JSON */,
 				9B9C1A9216281E1000A0A91C /* WeiDotaClient */,
 				9B9C1A8B16281E0F00A0A91C /* Frameworks */,
@@ -94,6 +117,7 @@
 		9B9C1A8B16281E0F00A0A91C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B35608D162D386000880F9E /* IOKit.framework */,
 				9B9C1A8C16281E0F00A0A91C /* UIKit.framework */,
 				9B9C1A8E16281E0F00A0A91C /* Foundation.framework */,
 				9B9C1A9016281E1000A0A91C /* CoreGraphics.framework */,
@@ -121,6 +145,7 @@
 			children = (
 				9B9C1A9416281E1000A0A91C /* WeiDotaClient-Info.plist */,
 				9B9C1A9516281E1000A0A91C /* InfoPlist.strings */,
+				9B35607A162D095200880F9E /* Localizable.strings */,
 				9B9C1A9816281E1000A0A91C /* main.m */,
 				9B9C1A9A16281E1000A0A91C /* WeiDotaClient-Prefix.pch */,
 			);
@@ -146,15 +171,6 @@
 			);
 			name = JSON;
 			path = WeiDotaClient/JSON;
-			sourceTree = "<group>";
-		};
-		9B9C1ACD162BFE2B00A0A91C /* Http */ = {
-			isa = PBXGroup;
-			children = (
-				9B9C1ACE162BFEB300A0A91C /* HttpCom.h */,
-				9B9C1ACF162BFEB300A0A91C /* HttpCom.m */,
-			);
-			name = Http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +207,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				zh,
 			);
 			mainGroup = 9B9C1A7D16281E0F00A0A91C;
 			productRefGroup = 9B9C1A8916281E0F00A0A91C /* Products */;
@@ -209,6 +226,7 @@
 			files = (
 				9B9C1A9716281E1000A0A91C /* InfoPlist.strings in Resources */,
 				9B9C1AA016281E1000A0A91C /* MainStoryboard.storyboard in Resources */,
+				9B356078162D095200880F9E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,17 +247,28 @@
 				9B9C1ACA162BF83200A0A91C /* SBJsonBase.m in Sources */,
 				9B9C1ACB162BF83200A0A91C /* SBJsonParser.m in Sources */,
 				9B9C1ACC162BF83200A0A91C /* SBJsonWriter.m in Sources */,
-				9B9C1AD0162BFEB300A0A91C /* HttpCom.m in Sources */,
+				9B356081162D33F700880F9E /* HttpCom.m in Sources */,
+				9B356084162D342100880F9E /* UIDevice-Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9B35607A162D095200880F9E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B356079162D095200880F9E /* en */,
+				9B35607B162D096B00880F9E /* zh */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9B9C1A9516281E1000A0A91C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9B9C1A9616281E1000A0A91C /* en */,
+				9B35606B162D01E200880F9E /* zh */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -248,6 +277,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9B9C1A9F16281E1000A0A91C /* en */,
+				9B35606C162D02DB00880F9E /* zh */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -341,6 +371,7 @@
 				9B9C1AA816281E1000A0A91C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  WeiDotaClient
+
+  Created by scilearn peng on 10/16/12.
+  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+*/
+
+"InputErrorTitle"="输入错误";
+"InputErrorInfoHeroName"="英雄名字不能为空";
+"InputErrorButton"="知道了";
+"InputErrorInfoPassword"="密码不能为空";
+"InputErrorInfoHeroIcon"="头像不能为空";

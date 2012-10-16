@@ -15,7 +15,6 @@
     IBOutlet UITextField *passwordField;
     IBOutlet UITextField *inviteCodeField;
     IBOutlet UISegmentedControl *heroTypeControl;
-    int heroIconId;
 }
 
 @property (nonatomic, retain)   UIButton           *createButton;
