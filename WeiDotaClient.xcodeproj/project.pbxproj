@@ -11,6 +11,8 @@
 		9B356081162D33F700880F9E /* HttpCom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B356080162D33F700880F9E /* HttpCom.m */; };
 		9B356084162D342100880F9E /* UIDevice-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B356083162D342100880F9E /* UIDevice-Extensions.m */; };
 		9B35608F162D397000880F9E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B35608D162D386000880F9E /* IOKit.framework */; };
+		9B356097162D438A00880F9E /* heros in Resources */ = {isa = PBXBuildFile; fileRef = 9B356096162D438A00880F9E /* heros */; };
+		9B4D2B72162D5A5800757C17 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D2B71162D5A5800757C17 /* HomeViewController.m */; };
 		9B9C1A8D16281E0F00A0A91C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C1A8C16281E0F00A0A91C /* UIKit.framework */; };
 		9B9C1A8F16281E1000A0A91C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C1A8E16281E0F00A0A91C /* Foundation.framework */; };
 		9B9C1A9116281E1000A0A91C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C1A9016281E1000A0A91C /* CoreGraphics.framework */; };
@@ -38,6 +40,9 @@
 		9B356082162D342100880F9E /* UIDevice-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Extensions.h"; sourceTree = "<group>"; };
 		9B356083162D342100880F9E /* UIDevice-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Extensions.m"; sourceTree = "<group>"; };
 		9B35608D162D386000880F9E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		9B356096162D438A00880F9E /* heros */ = {isa = PBXFileReference; lastKnownFileType = folder; name = heros; path = WeiDotaClient/heros; sourceTree = "<group>"; };
+		9B4D2B70162D5A5800757C17 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9B4D2B71162D5A5800757C17 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		9B9C1A8816281E0F00A0A91C /* WeiDotaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiDotaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9C1A8C16281E0F00A0A91C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B9C1A8E16281E0F00A0A91C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +103,7 @@
 		9B9C1A7D16281E0F00A0A91C = {
 			isa = PBXGroup;
 			children = (
+				9B356096162D438A00880F9E /* heros */,
 				9B35607E162D33F700880F9E /* Utils */,
 				9B9C1AB9162BF83200A0A91C /* JSON */,
 				9B9C1A9216281E1000A0A91C /* WeiDotaClient */,
@@ -135,6 +141,8 @@
 				9B9C1AA216281E1000A0A91C /* LoginViewController.m */,
 				9B9C1AA9162BB89D00A0A91C /* RegistViewController.h */,
 				9B9C1AAA162BB89D00A0A91C /* RegistViewController.m */,
+				9B4D2B70162D5A5800757C17 /* HomeViewController.h */,
+				9B4D2B71162D5A5800757C17 /* HomeViewController.m */,
 				9B9C1A9316281E1000A0A91C /* Supporting Files */,
 			);
 			path = WeiDotaClient;
@@ -224,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B356097162D438A00880F9E /* heros in Resources */,
 				9B9C1A9716281E1000A0A91C /* InfoPlist.strings in Resources */,
 				9B9C1AA016281E1000A0A91C /* MainStoryboard.storyboard in Resources */,
 				9B356078162D095200880F9E /* Localizable.strings in Resources */,
@@ -249,6 +258,7 @@
 				9B9C1ACC162BF83200A0A91C /* SBJsonWriter.m in Sources */,
 				9B356081162D33F700880F9E /* HttpCom.m in Sources */,
 				9B356084162D342100880F9E /* UIDevice-Extensions.m in Sources */,
+				9B4D2B72162D5A5800757C17 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

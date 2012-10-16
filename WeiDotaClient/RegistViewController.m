@@ -22,12 +22,14 @@
 @synthesize passwordField;
 @synthesize inviteCodeField;
 @synthesize heroTypeControl;
-
+@synthesize iconImage;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    iconChooseView = nil;
+    heroIconPath = nil;
 }
 
 - (void)viewDidUnload
@@ -41,6 +43,76 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)finishChooseIcon:(UIButton*)btn
+{
+    NSLog(@"finish choose icon:%@", btn.titleLabel.text);
+    
+    heroIconPath = [NSMutableString stringWithString:btn.titleLabel.text];
+    [iconImage setImage:[UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], heroIconPath]]];
+    [UIView beginAnimations:@"flipping view"
+                    context:nil];
+    [UIView setAnimationDuration:1];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight
+                           forView:self.view
+                             cache:NO];
+    [iconChooseView removeFromSuperview];
+    [UIView commitAnimations];
+    [iconChooseView release];
+    iconChooseView = nil;
+    
+}
+
+- (IBAction)iconChoose:(id)sender
+{
+    
+    iconChooseView = [[UIScrollView alloc]
+               initWithFrame:self.view.bounds];
+    iconChooseView.backgroundColor=[UIColor blackColor];
+    // add image to the icon choose view
+    NSString *path = [NSString stringWithFormat:@"%@/heros", [[NSBundle mainBundle] bundlePath], ""];
+    NSFileManager *manager = [NSFileManager defaultManager];
+    NSArray *fileList = [manager contentsOfDirectoryAtPath:path error:nil];
+    int x = 0, y = 0;
+    CGRect rect = iconChooseView.bounds;
+    int width = rect.size.width;
+    int height = rect.size.height;
+    for (NSString *s in fileList)
+    {
+        NSLog(@"%@", s);
+        //UIImage *image = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"heros/%@", s]];
+        //UIImageView * imageView =[[UIImageView alloc] initWithImage:image];
+        //imageView.frame = CGRectMake(x, y, 64, 64);
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btn setTitle:[NSString stringWithFormat:@"heros/%@", s] forState:UIControlStateNormal];
+        btn.frame = CGRectMake(x,y,64,64); //edit for you own frame
+        UIImage *img = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", path, s]];
+        [btn setImage:img forState:UIControlStateNormal];
+        x += 64;
+        if (x+64>width)
+        {
+            x = 0;
+            y += 64;
+        }
+        [btn addTarget:self action:@selector(finishChooseIcon:)
+            forControlEvents:UIControlEventTouchUpInside];
+        [iconChooseView addSubview:btn];
+    }
+    if (y+64 > height)
+    {
+        [iconChooseView setContentSize:CGSizeMake(width, y)];
+    }
+    // show view
+    // add animation
+    [UIView beginAnimations:@"flipping view"
+                    context:nil];
+    [UIView setAnimationDuration:1];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft
+                           forView:self.view
+                             cache:NO];
+    [self.view addSubview:iconChooseView];
+    [UIView commitAnimations];
+
+}
 
 - (IBAction)create:(id)sender
 {
@@ -70,12 +142,24 @@
         [alert show];
         return;
     }
+    if (heroIconPath == nil)
+    {
+        UIAlertView *alert=[[[UIAlertView alloc] 
+                             initWithTitle:NSLocalizedString(@"InputErrorTitle", nil)
+                             message:NSLocalizedString(@"InputErrorInfoHeroIcon", nil)
+                             delegate:self 
+                             cancelButtonTitle:NSLocalizedString(@"InputErrorButton", nil)
+                             otherButtonTitles:nil] 
+                            autorelease];
+        [alert show];
+        return;
+    }
     
     UIDevice* device = [[UIDevice alloc] init];
     NSString *imei = [device imei];
     if ( imei == nil)
     {
-        imei = @"123456";
+        imei = @"1235644";
     }
     [device release];
     NSString *heroIcon = @"heros/BTNSorceress.png";
